@@ -4,7 +4,8 @@ const myTeam = 'Jose & Jorge';
 console.log(myTeam);
 
 function createGreeting() {
-console.log(`'Hi, my name is Jose and I'm 23 years old'`)
+return `'Hi, my name is Jose and I'm 23 years old'`
 }
 
-createGreeting();
+const greeting1 = createGreeting();
+console.log(greeting1);
