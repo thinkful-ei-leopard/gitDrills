@@ -3,9 +3,13 @@ const myTeam = 'Jose & Jorge';
 
 console.log(myTeam);
 
-function createGreeting(name, age) {
-return `'Hi, my name is ${name} and I'm ${age} years old'`
+function getYearOfBirth(age) {
+    return 2020 - age;
 }
 
-const greeting1 = createGreeting('Jose', 23);
-console.log(greeting1);
+function createGreeting(age) {
+    const yob = getYearOfBirth(age);
+    return `'I was born in ${yob}'`
+}
+
+console.log(createGreeting(23))
