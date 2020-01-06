@@ -3,9 +3,9 @@ const myTeam = 'Jose & Jorge';
 
 console.log(myTeam);
 
-function createGreeting() {
-return `'Hi, my name is Jose and I'm 23 years old'`
+function createGreeting(name, age) {
+return `'Hi, my name is ${name} and I'm ${age} years old'`
 }
 
-const greeting1 = createGreeting();
+const greeting1 = createGreeting('Jose', 23);
 console.log(greeting1);
