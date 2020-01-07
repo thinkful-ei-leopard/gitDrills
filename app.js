@@ -1,15 +1,25 @@
 /* eslint-disable strict */
-const myTeam = 'Jose & Jorge';
+// const myTeam = 'Jose & Jorge';
 
-console.log(myTeam);
+// console.log(myTeam);
 
 function getYearOfBirth(age) {
-    return 2020 - age;
+  if (age < 0) {
+    throw new Error('Age can not be negative');
+  }
+  return 2020 - age;
 }
 
-function createGreeting(age) {
-    const yob = getYearOfBirth(age);
-    return `'I was born in ${yob}'`
+function createGreeting(name, age) {
+  const yob = getYearOfBirth(age);
+  return `'Hi, my name is ${name} and I'm ${age} years old.' 
+  'I was born in ${yob}'`;
 }
 
-console.log(createGreeting(23))
+
+try {
+  const greeting1 = createGreeting(24);
+} catch(e) {
+  console.error(e);
+}
+
