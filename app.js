@@ -23,7 +23,19 @@
 //   console.error(e);
 // }
 
-function jediName(firstName,lastName) {
-return lastName.split('').slice(0, 3).join('') + firstName.split('').slice(0, 2).join('')
+// function jediName(firstName,lastName) {
+// return lastName.split('').slice(0, 3).join('') + firstName.split('').slice(0, 2).join('')
+// }
+// console.log(jediName('Jorge','Espino'))
+
+function beyond(num) {
+  if(num === Infinity || num === -Infinity) {
+    console.log('And beyond');
+  } else if(num > 0) {
+    console.log('To infinity');
+  } else if(num < 0) {
+    console.log('To negative infinity');
+  } else if(num === 0) {
+    console.log('Staying home');
+  }
 }
-console.log(jediName('Jorge','Espino'))
