@@ -28,14 +28,30 @@
 // }
 // console.log(jediName('Jorge','Espino'))
 
-function beyond(num) {
-  if(num === Infinity || num === -Infinity) {
-    console.log('And beyond');
-  } else if(num > 0) {
-    console.log('To infinity');
-  } else if(num < 0) {
-    console.log('To negative infinity');
-  } else if(num === 0) {
-    console.log('Staying home');
+// function beyond(num) {
+//   if(num === Infinity || num === -Infinity) {
+//     console.log('And beyond');
+//   } else if(num > 0) {
+//     console.log('To infinity');
+//   } else if(num < 0) {
+//     console.log('To negative infinity');
+//   } else if(num === 0) {
+//     console.log('Staying home');
+//   }
+// }
+
+function repeat(fn, n) {
+    for(let i = 1; i <= n; i++) {
+      fn()
+    }
   }
-}
+  
+  function hello() {
+    console.log('Hello world')
+  }
+  
+  function goodbye() {
+    console.log('Goodbye world')
+  }
+  
+  repeat(goodbye, 5)
